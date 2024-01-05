@@ -1,0 +1,130 @@
+.card {
+  border-radius: 10px;
+  padding: 2rem 4rem;
+  border: 1px solid $clr-primary;
+  box-shadow: 0.5rem 0.5rem $clr-primary-light;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 1rem 1rem $clr-yellow;
+  }
+
+  &__tag {
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 0.2rem 0.4rem;
+    box-shadow: 0.2rem 0.2rem $clr-primary;
+    border: 1px solid $clr-black;
+    background-color: $clr-blue-light;
+    color: $clr-primary;
+    display: inline-block;
+  }
+
+  &__title {
+    &:link,
+    &:visited {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: $clr-primary;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 1.6rem;
+      transition: color 0.3s ease;
+    }
+
+    &:hover,
+    &:active {
+      color: $clr-yellow;
+    }
+  }
+
+  &__skills {
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 2.4rem;
+  }
+
+  &__skill {
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 0.2rem 0.4rem;
+    box-shadow: 0.2rem 0.2rem $clr-primary;
+    border: 1px solid $clr-black;
+
+    &--html {
+      background-color: $clr-html-light;
+      color: $clr-html-dark;
+    }
+
+    &--css {
+      background-color: $clr-css-light;
+      color: $clr-css;
+    }
+
+    &--javascript {
+      background-color: $clr-js-light;
+      color: $clr-js-dark;
+    }
+  }
+
+  &__description {
+    font-size: 1.4rem;
+    margin-bottom: 3.2rem;
+    color: $clr-primary-light;
+  }
+
+  &__links {
+    display: flex;
+    gap: 1.2rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      font-size: 1.4rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: block;
+      color: $clr-primary;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      box-shadow: 0.3rem 0.3rem $clr-primary;
+      text-align: center;
+      transition: all 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      transform: translateY(-6px);
+    }
+
+    &--primary {
+      &:link,
+      &:visited {
+        background-color: $clr-yellow;
+        width: 100%;
+      }
+
+      &:hover,
+      &:active {
+        background-color: darken($clr-yellow, 10%);
+      }
+    }
+
+    &--secondary {
+      &:link,
+      &:visited {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $clr-yellow-light;
+      }
+      &:hover,
+      &:active {
+        background-color: darken($clr-yellow-light, 10%);
+      }
+    }
+  }
+}

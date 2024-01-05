@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box;
+  background-color: #fdfdff; }
+
+html {
+  font-size: 62.5%; }
+  @media screen and (max-width: 50em) {
+    html {
+      font-size: 56.25%; } }
+  @media screen and (max-width: 23.4375em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1.6rem; }
+
+.heading-primary {
+  font-size: 5.2rem; }
+
+.u-container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem; }
+
+.u-hidden {
+  display: none;
+  opacity: 0;
+  visibility: hidden; }
+
+.u-block {
+  display: block; }
+
+.u-margin-bottom-md {
+  margin-bottom: 3.2rem; }
+
+.card {
+  border-radius: 10px;
+  padding: 2rem 4rem;
+  border: 1px solid #1b1b32;
+  box-shadow: 0.5rem 0.5rem #3b3b4f;
+  transition: all 0.3s ease; }
+  .card:hover {
+    box-shadow: 1rem 1rem #feac32; }
+  .card__tag {
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 0.2rem 0.4rem;
+    box-shadow: 0.2rem 0.2rem #1b1b32;
+    border: 1px solid #000;
+    background-color: #e6eaf7;
+    color: #1b1b32;
+    display: inline-block; }
+  .card__title:link, .card__title:visited {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #1b1b32;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1.6rem;
+    transition: color 0.3s ease; }
+  .card__title:hover, .card__title:active {
+    color: #feac32; }
+  .card__skills {
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 2.4rem; }
+  .card__skill {
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 0.2rem 0.4rem;
+    box-shadow: 0.2rem 0.2rem #1b1b32;
+    border: 1px solid #000; }
+    .card__skill--html {
+      background-color: #fcede9;
+      color: #9f351b; }
+    .card__skill--css {
+      background-color: #eeecf2;
+      color: #563d7c; }
+    .card__skill--javascript {
+      background-color: #fefcef;
+      color: #48431b; }
+  .card__description {
+    font-size: 1.4rem;
+    margin-bottom: 3.2rem;
+    color: #3b3b4f; }
+  .card__links {
+    display: flex;
+    gap: 1.2rem; }
+  .card__link:link, .card__link:visited {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    color: #1b1b32;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    box-shadow: 0.3rem 0.3rem #1b1b32;
+    text-align: center;
+    transition: all 0.3s; }
+  .card__link:hover, .card__link:active {
+    transform: translateY(-6px); }
+  .card__link--primary:link, .card__link--primary:visited {
+    background-color: #feac32;
+    width: 100%; }
+  .card__link--primary:hover, .card__link--primary:active {
+    background-color: #fc9701; }
+  .card__link--secondary:link, .card__link--secondary:visited {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff7eb; }
+  .card__link--secondary:hover, .card__link--secondary:active {
+    background-color: #ffe3b8; }
+
+.header,
+.main,
+.footer {
+  padding: 4rem 0; }
+
+.grid {
+  display: grid; }
+
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem; }
+  @media screen and (max-width: 50em) {
+    .grid-3-cols {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media screen and (max-width: 34.375em) {
+    .grid-3-cols {
+      grid-template-columns: 1fr; } }

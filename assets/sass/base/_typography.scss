@@ -1,0 +1,20 @@
+html {
+  font-size: 62.5%;
+
+  @media screen and (max-width: $bp-large) {
+    font-size: 56.25%;
+  }
+
+  @media screen and (max-width: $bp-small) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1.6rem;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+}
