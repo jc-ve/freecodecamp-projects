@@ -10,3 +10,8 @@ body {
   box-sizing: border-box;
   background-color: $clr-white;
 }
+
+::selection {
+  background-color: $clr-primary;
+  color: $clr-white;
+}
